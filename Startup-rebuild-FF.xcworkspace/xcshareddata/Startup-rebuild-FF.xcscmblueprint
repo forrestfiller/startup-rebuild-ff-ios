@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1208BDC700578B0D08CB4EFBBC947E1EC120F9FC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "208BE3FC4DD8ED3B422337B75275D2C4E46F255C" : 0,
+    "1208BDC700578B0D08CB4EFBBC947E1EC120F9FC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "04184564-3AE4-4CE2-92A0-D7D54B9ABE39",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "208BE3FC4DD8ED3B422337B75275D2C4E46F255C" : "",
+    "1208BDC700578B0D08CB4EFBBC947E1EC120F9FC" : "Startup-rebuild-FF\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Startup-rebuild-FF",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Startup-rebuild-FF.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/forrestfiller\/startup-rebuild-ff-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1208BDC700578B0D08CB4EFBBC947E1EC120F9FC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/forrestfiller\/InstagramAPI.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "208BE3FC4DD8ED3B422337B75275D2C4E46F255C"
+    }
+  ]
+}

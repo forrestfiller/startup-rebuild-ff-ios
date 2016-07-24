@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277CD82EB3B7137E4F6EF610 /* Pods_Startup_rebuild_FF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07D93828A690551AF54F75C /* Pods_Startup_rebuild_FF.framework */; };
 		B73ADFDB1D4549B800B3956B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73ADFDA1D4549B800B3956B /* AppDelegate.swift */; };
 		B73ADFDD1D4549B800B3956B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73ADFDC1D4549B800B3956B /* ViewController.swift */; };
 		B73ADFE01D4549B800B3956B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73ADFDE1D4549B800B3956B /* Main.storyboard */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		179436B854FE7628F31C263D /* Pods-Startup-rebuild-FF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Startup-rebuild-FF.release.xcconfig"; path = "Pods/Target Support Files/Pods-Startup-rebuild-FF/Pods-Startup-rebuild-FF.release.xcconfig"; sourceTree = "<group>"; };
+		B07D93828A690551AF54F75C /* Pods_Startup_rebuild_FF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Startup_rebuild_FF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6DEA5FB42D8118ED92D1BEF /* Pods-Startup-rebuild-FF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Startup-rebuild-FF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Startup-rebuild-FF/Pods-Startup-rebuild-FF.debug.xcconfig"; sourceTree = "<group>"; };
 		B73ADFD71D4549B800B3956B /* Startup-rebuild-FF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Startup-rebuild-FF.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73ADFDA1D4549B800B3956B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B73ADFDC1D4549B800B3956B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277CD82EB3B7137E4F6EF610 /* Pods_Startup_rebuild_FF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				B73ADFD91D4549B800B3956B /* Startup-rebuild-FF */,
 				B73ADFD81D4549B800B3956B /* Products */,
+				E0F533C86FB38B968C60AFD3 /* Pods */,
+				FEC9CC5415BA2949311F2896 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +91,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E0F533C86FB38B968C60AFD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6DEA5FB42D8118ED92D1BEF /* Pods-Startup-rebuild-FF.debug.xcconfig */,
+				179436B854FE7628F31C263D /* Pods-Startup-rebuild-FF.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FEC9CC5415BA2949311F2896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B07D93828A690551AF54F75C /* Pods_Startup_rebuild_FF.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B73ADFE91D4549B900B3956B /* Build configuration list for PBXNativeTarget "Startup-rebuild-FF" */;
 			buildPhases = (
+				DF7DCDEC39312C160A131234 /* [CP] Check Pods Manifest.lock */,
 				B73ADFD31D4549B800B3956B /* Sources */,
 				B73ADFD41D4549B800B3956B /* Frameworks */,
 				B73ADFD51D4549B800B3956B /* Resources */,
+				9482CC75F3A192C3261ED605 /* [CP] Embed Pods Frameworks */,
+				12D99076AE8C8BAB7AD88907 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12D99076AE8C8BAB7AD88907 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Startup-rebuild-FF/Pods-Startup-rebuild-FF-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9482CC75F3A192C3261ED605 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Startup-rebuild-FF/Pods-Startup-rebuild-FF-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7DCDEC39312C160A131234 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B73ADFD31D4549B800B3956B /* Sources */ = {
@@ -271,6 +346,7 @@
 		};
 		B73ADFEA1D4549B900B3956B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6DEA5FB42D8118ED92D1BEF /* Pods-Startup-rebuild-FF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Startup-rebuild-FF/Info.plist";
@@ -282,6 +358,7 @@
 		};
 		B73ADFEB1D4549B900B3956B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 179436B854FE7628F31C263D /* Pods-Startup-rebuild-FF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Startup-rebuild-FF/Info.plist";
@@ -310,6 +387,7 @@
 				B73ADFEB1D4549B900B3956B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

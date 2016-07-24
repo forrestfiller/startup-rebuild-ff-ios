@@ -1,0 +1,6 @@
+framework module Pods_Startup_rebuild_FF {
+  umbrella header "Pods-Startup-rebuild-FF-umbrella.h"
+
+  export *
+  module * { export * }
+}
