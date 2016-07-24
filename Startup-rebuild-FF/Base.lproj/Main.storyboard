@@ -19,6 +19,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2D-aB-x80">
                                 <rect key="frame" x="278" y="179" width="44" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Profile"/>
                                 <connections>
                                     <segue destination="IRK-bg-QZC" kind="show" id="nnV-71-Kqe"/>
@@ -32,7 +33,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="E2D-aB-x80" firstAttribute="centerX" secondItem="o51-K6-MjC" secondAttribute="centerX" id="69W-bX-1g8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o51-K6-MjC" secondAttribute="bottom" constant="162" id="Zlz-Bx-FGE"/>

@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet var startupBtn: UIButton!
     @IBOutlet var profileBtn: UIButton!
     
+//    override func loadView() {
+//        view.backgroundColor = .redColor()
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
