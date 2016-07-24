@@ -11,7 +11,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var startupBtn: UIButton!
+    @IBOutlet var profileBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -16,9 +16,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2D-aB-x80">
+                                <rect key="frame" x="278" y="179" width="44" height="30"/>
+                                <state key="normal" title="Profile"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o51-K6-MjC">
+                                <rect key="frame" x="274" y="408" width="52" height="30"/>
+                                <state key="normal" title="Startup"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E2D-aB-x80" firstAttribute="centerX" secondItem="o51-K6-MjC" secondAttribute="centerX" id="69W-bX-1g8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o51-K6-MjC" secondAttribute="bottom" constant="162" id="Zlz-Bx-FGE"/>
+                            <constraint firstItem="E2D-aB-x80" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="115" id="eCb-JV-D8w"/>
+                            <constraint firstItem="E2D-aB-x80" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sOl-zv-Xwm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KiC-dA-av5"/>
+                    <connections>
+                        <outlet property="profileBtn" destination="E2D-aB-x80" id="Tak-mu-Psx"/>
+                        <outlet property="startupBtn" destination="o51-K6-MjC" id="3ds-26-3Zq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
