@@ -12,6 +12,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet var profilesTable: UITableView!
     
+    var profileList = Array<Profile>()
+    
     
     
 
@@ -27,7 +29,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 40
+        return 20
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -39,19 +41,21 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         let cell = UITableViewCell(style: .Subtitle, reuseIdentifier: cellId)
         cell.textLabel?.text = "\(indexPath.row)"
         return cell
-        
-        
     }
     
+//    func configureCell(cell: UITableViewCell, indexPath: NSIndexPath) -> UITableViewCell {
+//        let profile = profileList[indexPath.row]
+//        cell.textLabel?.text = profile.firstname! + " " + profile.lastname!
+//        cell.detailTextLabel?.text = profile.email
+//        return cell
+//    }
+    
 
-    /*
-    // MARK: - Navigation
 
-    //
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+//          Fin.
 }
+
+
+
+

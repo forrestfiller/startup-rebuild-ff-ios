@@ -11,6 +11,8 @@ import UIKit
 class StartupViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var startupsTable: UITableView!
+    
+    var startupList = Array<Startup>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,15 +41,19 @@ class StartupViewController: UIViewController, UITableViewDataSource, UITableVie
         return cell
     }
     
+    
+//        func configureCell(cell: UITableViewCell, indexPath: NSIndexPath) -> UITableViewCell {
+//            let startup = startupList[indexPath.row]
+//            cell.textLabel?.text = "Startup: " + startup.name! + ", " + "Headquarters: " + startup.city!
+//            cell.detailTextLabel?.text = "Founder: " + startup.founder!
+//            return cell
+//        }
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
+    
+//              Fin.
 }
+
+
