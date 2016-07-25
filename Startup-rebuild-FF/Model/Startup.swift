@@ -7,20 +7,64 @@
 //
 
 import UIKit
+import Alamofire
+
+let imageUrl = "https://ff-startups.herokuapp.com/images"
 
 class Startup: NSObject {
     var name: String?
     var city: String?
-    var image: String?
+    var imageUber: String?
+    var imageXiaomi: String?
+    var imageSnapChat: String?
+    var imageWeWork: String?
+    var imageFile: UIImage?
+    var isFetching = false
     var founder: String?
     var shares: Int?
     
-    func populate(profileInfo: Dictionary<String, AnyObject>){
-        self.name = profileInfo["name"] as? String
-        self.city = profileInfo["city"] as? String
-        self.image = profileInfo["image"] as? String
-        self.founder = profileInfo["founder"] as? String
-        self.shares = profileInfo["shares"] as? Int
+    enum imageUrl: String {
+        case uber = "https://ff-startups.herokuapp.com/images/uber.jpg"
+        case xiaomi = "https://ff-startups.herokuapp.com/images/airbnb.jpg"
+        case snapChat = "https://ff-startups.herokuapp.com/images/file.jpg"
+        case weWork = "https://ff-startups.herokuapp.com/images/tech.jpg"
+    }
+    
+    func fetchImage(){
+        if (self.imageFile == nil){ // no image, ignore
+            return
+        }
+        
+        if (self.isFetching == true){
+            return
+        }
+        
+        self.isFetching = true
+        Alamofire.request(.GET, imageUrl.uber, parameters:nil).response { (req, res, data, error) in
+            self.isFetching = false
+            if (error != nil){
+                return
+            }
+            
+            if let img = UIImage(data: data!) {
+                self.imageFile = img
+                
+                let notification = NSNotification(name:"ImageDownloaded", object:nil)
+                let notificationCenter = NSNotificationCenter.defaultCenter()
+                notificationCenter.postNotification(notification)
+            }
+        }
+    }
+
+ 
+    func populate(startupInfo: Dictionary<String, AnyObject>){
+        self.name = startupInfo["name"] as? String
+        self.city = startupInfo["city"] as? String
+        self.image = startupInfo["image"] as? String
+        self.founder = startupInfo["founder"] as? String
+        self.shares = startupInfo["shares"] as? Int
     }
 
 }
+
+
